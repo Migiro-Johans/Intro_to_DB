@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS books (
     price DOUBLE NOT NULL,
     FOREIGN KEY (author_id) REFERENCES authors(author_id) ON DELETE SET NULL
 );
-CREATE TABLE IF NOT EXISTS authors (
+CREATE TABLE IF NOT EXISTS Authors (
     author_id INT AUTO_INCREMENT PRIMARY KEY,
     author_name VARCHAR(215) NOT NULL
 );
